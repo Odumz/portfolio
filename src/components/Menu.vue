@@ -69,7 +69,7 @@ a.router-link-exact-active.router-link-active {
     background: #F97C46;
 }
 
-@media screen and (max-width: 759px) {
+@media screen and (max-width: 850px) {
     nav ul {
         position: absolute;
         width: 250px;
