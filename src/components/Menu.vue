@@ -1,36 +1,25 @@
 <template>
-    <!-- <div class="tw-mx-auto tw-bg-secondary tw-p-8 tw-text-primary tw-font-light tw-text-xl ">
-        <nav class="tw-flex-row md:tw-justify-between">
-            <div class="tw-flex tw-flex-row tw-justify-between">
-                <a href="#">Logo mi</a>
-                <p class="md:tw-hidden tw-bg-secondary">
-                    Menu
-                </p>
-            </div>
-        </nav>
-    </div> -->
     <nav :style="{background: background || '#2A2F32'}" class=" tw-bg-secondary tw-w-full">
-<!-- "[ todo.title ? 'active' : 'inactive', 'tw-outline-none']" -->
-<ul :style="{background: background || '#2A2F32'}" class="tw-flex tw-h-full tw-items-center tw-pl-5" ref="nav">
-    <figure class="image-logo" @click="toggleNav()">
-        <img :src="imagePath" class="tw-h-10 tw-w-10 tw-cursor-pointer"/>
-    </figure>
-    <li v-for="(link, index) in navLinks" :key="index"
-        @mouseenter="$event.currentTarget.style.background = hoverBackground || '#eee'"
-        @mouseleave="$event.currentTarget.style.background = Background || '#2A2F32'"
-        class="tw-list-none tw-px-2 tw-py-2"
-        >
-        <router-link
-            :style="{color: linkColor || '#fff'}"
-            :to="link.path"
-            class="tw-flex tw-flex-row-reverse tw-px-3 tw-py-3 tw-items-center"
-            >
-            {{ link.text }}
-           <icons :name=link.icon class=" tw-mr-3 tw-text-xs" />
-        </router-link>
-        <!-- <hr style="height: 1px; border:none; color:#F97C46; background-color:#F97C46;" /> -->
-    </li>
-</ul>
+        <ul :style="{background: background || '#2A2F32'}" ref="nav">
+            <figure class="image-logo" @click="toggleNav()">
+                <img :src="imagePath" class="tw-h-10 tw-w-10 tw-cursor-pointer"/>
+            </figure>
+            <li v-for="(link, index) in navLinks" :key="index"
+                @mouseenter="$event.currentTarget.style.background = hoverBackground || '#eee'"
+                @mouseleave="$event.currentTarget.style.background = Background || '#2A2F32'"
+                class="tw-list-none tw-px-2 tw-py-2"
+                >
+                <router-link
+                    :style="{color: linkColor || '#fff'}"
+                    :to="link.path"
+                    class="tw-flex tw-flex-row-reverse tw-px-3 tw-py-3 tw-items-center"
+                    >
+                    {{ link.text }}
+                <icons :name=link.icon class=" tw-mr-3 tw-text-xs" />
+                </router-link>
+                <!-- <hr style="height: 1px; border:none; color:#F97C46; background-color:#F97C46;" /> -->
+            </li>
+        </ul>
     </nav>
 </template>
 
@@ -53,6 +42,9 @@ export default {
 
 <style scoped>
 nav ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
     margin-block-end: 0;
     margin-block-start: 0;
     padding-inline-start: 0;
