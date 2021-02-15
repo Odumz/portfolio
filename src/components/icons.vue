@@ -24,70 +24,7 @@
         <svg v-else-if="name == 'about'" style="width: 30px" xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><title>Person</title><path d='M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='20'/><path d='M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z' fill='none' stroke='currentColor' stroke-miterlimit='10' stroke-width='20'/></svg>
 
         <svg v-else-if="name == 'twitter'" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
-
-    <!-- <div v-else-if="name == ''">
-
-    </div>
-    <div v-else-if="name == ''">
-
-    </div>
-    <div v-else-if="name == ''">
-
-    </div>
-    <div v-else-if="name == ''">
-
-    </div>
-    <div v-else-if="name == ''">
-
-    </div>
-    <div v-else-if="name == ''">
-
-    </div>
-    <div v-else-if="name == ''">
-
-    </div>
-    <div v-else-if="name == ''">
-
-    </div>
-    <div v-else-if="name == ''">
-
-    </div>
-    <div v-else-if="name == ''">
-
-    </div>
-    <div v-else-if="name == ''">
-
-    </div>
-    <div v-else-if="name == ''">
-
-    </div>
-    <div v-else-if="name == ''">
-
-    </div>
-    <div v-else-if="name == ''">
-
-    </div>
-    <div v-else-if="name == ''">
-
-    </div>
-    <div v-else-if="name == ''">
-
-    </div>
-    <div v-else-if="name == ''">
-
-    </div>
-    <div v-else-if="name == ''">
-
-    </div>
-    <div v-else-if="name == ''">
-
-    </div>
-    <div v-else-if="name == ''">
-
-    </div>
-    <div v-else-if="name == ''">
-
-    </div> -->
+        
 </template>
 
 <script>
