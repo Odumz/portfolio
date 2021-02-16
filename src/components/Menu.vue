@@ -1,8 +1,8 @@
 <template>
-    <nav :style="{background: background || '#2A2F32'}" class=" tw-bg-secondary tw-w-full">
+    <nav :style="{background: background || '#2A2F32'}" class=" tw-bg-secondary tw-py-3 tw-w-full">
         <ul :style="{background: background || '#2A2F32'}" ref="nav">
             <figure class="image-logo" @click="toggleNav()">
-                <img :src="imagePath" class="tw-h-10 tw-w-10 tw-cursor-pointer"/>
+                <img :src="imagePath" class="tw-h-10 tw-w-10 tw-mr-12 tw-cursor-pointer"/>
             </figure>
             <li v-for="(link, index) in navLinks" :key="index"
                 @mouseenter="$event.currentTarget.style.background = hoverBackground || '#eee'"
@@ -15,21 +15,24 @@
                     class="tw-flex tw-flex-row-reverse tw-px-3 tw-py-3 tw-items-center"
                     >
                     {{ link.text }}
-                <icons :name=link.icon class=" tw-mr-3 tw-text-xs" />
+                <icons :name=link.icon class=" tw-mr-3" />
                 </router-link>
                 <!-- <hr style="height: 1px; border:none; color:#F97C46; background-color:#F97C46;" /> -->
             </li>
         </ul>
+        <!-- <socials class="tw-flex tw-flex-row" /> -->
     </nav>
 </template>
 
 <script>
 import icons from './icons'
+// import socials from '../components/socials'
 
 export default {
     props: ['navLinks', 'background', 'linkColor', 'hoverBackground', 'imagePath'],
     components: {
-        icons
+        icons,
+        // socials
     },
     methods: {
         toggleNav () {
@@ -51,7 +54,7 @@ nav ul {
     box-shadow: 2px 2px 2px #333;
 }
 nav ul figure {
-        padding-left: 15px;
+        padding-left: 40px;
         z-index: 1;
         top: 10px;
         left: 13px;
@@ -61,7 +64,7 @@ a.router-link-exact-active.router-link-active {
     background: #F97C46;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 920px) {
     nav ul {
         position: absolute;
         width: 250px;
@@ -70,6 +73,7 @@ a.router-link-exact-active.router-link-active {
         transition: 300ms ease all;
         top: 60px;
         box-shadow: 2px 2px 2px #333;
+        z-index: 1;
     }
     nav ul.active {
         left: 0px;

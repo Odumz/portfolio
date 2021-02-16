@@ -1,15 +1,54 @@
 <template>
-    <div class="tw-mx-auto tw-h-full tw-bg-primary tw-p-8">
-        I am Biodun
+    <div id="app" class="tw-flex tw-flex-row-reverse">
+        <home class="home tw-h-screen tw-w-full tw-mx-auto tw-bg-secondary tw-py-8 tw-pr-24" />
+        <socials v-if="show" class=" tw-w-0.5 tw-h-screen"
+        :socials=socials />
     </div>
+    
 </template>
 
 <script>
+import socials from '../components/socials'
+import home from '../components/home'
+
 export default {
-    
+    components: {
+        socials,
+        home
+    },
+    data: () => ({
+        socials: [
+            {
+            title: 'Facebook',
+            path: 'https://facebook.com',
+            icon: 'facebook'
+            },
+            {
+            title: 'Github',
+            path: 'https://github.com',
+            icon: 'github'
+            },
+            {
+            title: 'LinkedIn',
+            path: 'https://linkedin.com',
+            icon: 'linkedin'
+            },
+            {
+            title: 'Twitter',
+            path: 'https://twitter.com',
+            icon: 'twitter'
+            },
+        ],
+        show: true 
+    })
 }
 </script>
 
 <style scoped>
-
+    @media screen and (max-width: 920px) {
+        .home {
+            padding-left: 10px !important;
+            padding-right: 70px !important;
+        }
+    }
 </style>
