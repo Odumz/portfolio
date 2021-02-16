@@ -3,7 +3,7 @@
         Blog
         <h1>Latest Blogs</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe voluptatem aut doloremque sed nulla ratione, perspiciatis consequuntur et nesciunt itaque corrupti repudiandae, dolores commodi eveniet earum accusamus fugiat magni quasi.</p>
-        <gallery :blogs=blogs />
+        <gallery :content=content class="tw-flex" />
     </div>
 </template>
 
@@ -14,35 +14,35 @@ export default {
         gallery 
     },    
   data: () => ({
-      blogs: [
+      content: [
         {
           text: 'Home',
-          path: '/',
+          path: '/blog/1',
           icon: 'lorem'
         },
         {
           text: 'About',
-          path: '/about-me',
+          path: '/blog/2',
           icon: 'about'
         },
         {
           text: 'Portfolio',
-          path: '/my-works',
+          path: '/blog/3',
           icon: 'portfolio'
         },
         {
           text: 'Services',
-          path: '/services-i-offer',
+          path: '/blog/4',
           icon: 'services'
         },
         {
           text: 'Contact',
-          path: '/contact-me',
+          path: '/blog/5',
           icon: 'contact'
         },
         {
           text: 'Blog',
-          path: '/my-blogs',
+          path: '/blog/6',
           icon: 'blog'
         }
       ]
