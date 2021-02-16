@@ -1,6 +1,6 @@
 <template>
-    <div class="tw-text-primary tw-bg-secondary tw-py-7">
-        0dumz
+    <div>
+        form
     </div>
 </template>
 

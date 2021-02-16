@@ -4,19 +4,22 @@
         <socials v-if="show" class=" tw-w-0.5 tw-h-screen"
         :socials=socials />
     </div>
+    <Footer />
     
 </template>
 
 <script>
 import socials from '../components/socials'
 import home from '../components/home'
+import Footer from '../components/footer.vue'
 
 export default {
     components: {
         socials,
-        home
+        home,
+        Footer
     },
-    data: () => ({
+   data: () => ({
         socials: [
             {
             title: 'Facebook',
