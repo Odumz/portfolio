@@ -1,12 +1,13 @@
 <template>
-    <div class="tw-mx-auto tw-p-8 tw-text-primary tw-font-light tw-text-xl ">
-        helo
-    </div>
+    <myinfo class="tw-h-2/6 tw-max-h-60" />
 </template>
 
 <script>
+import myinfo from '../components/my-info'
 export default {
-    
+    components: {
+        myinfo
+    }    
 }
 </script>
 

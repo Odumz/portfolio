@@ -49,7 +49,7 @@ export default {
           path: '/my-blogs',
           icon: 'blog'
         }
-      ] 
+      ]
   }),
 }
 </script>
