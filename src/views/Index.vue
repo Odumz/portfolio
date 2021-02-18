@@ -1,7 +1,9 @@
 <template>
     <div id="app" class="tw-flex tw-flex-row-reverse">
-        <home class="home tw-h-screen tw-w-full tw-mx-auto tw-bg-secondary tw-py-8 tw-pr-24" />
-        <socials v-if="show" class=" tw-w-0.5 tw-h-screen"
+        <home class="home tw-h-screen tw-w-full tw-mx-auto tw-bg-secondary tw-py-8 tw-pr-20" />
+        <!-- <socials id="show" class="tw-w-0.5 tw--mt-24"
+        :socials=socials /> -->
+        <socials class="tw-w-0.5 tw--mt-24"
         :socials=socials />
     </div>
     <Footer />
@@ -50,8 +52,22 @@ export default {
 <style scoped>
     @media screen and (max-width: 920px) {
         .home {
-            padding-left: 10px !important;
+            padding-left: 100px !important;
             padding-right: 70px !important;
+        }
+        #show {
+            display: none;
+        }
+        #app {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+
+    @media screen and (max-width: 720px) {
+        .home {
+            padding-left: 60px !important;
+            padding-right: 10px !important;
         }
     }
 </style>

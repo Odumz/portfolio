@@ -3,12 +3,14 @@
         helo
     </div>
     <Form />
+    <Footer />
 </template>
 
 <script>
+import Footer from '../components/footer.vue'
 import Form from '../components/form.vue'
 export default {
-  components: { Form },
+  components: { Form, Footer },
     
 }
 </script>

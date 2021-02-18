@@ -5,6 +5,7 @@ import Portfolio from './views/Portfolio.vue'
 import Services from './views/Services.vue'
 import Contact from './views/Contact.vue'
 import Blog from './views/Blog.vue'
+// import NotFound from './views/Error.vue'
 
 const routes = [
     {
@@ -36,12 +37,26 @@ const routes = [
         path: '/my-blogs',
         name: 'blog',
         component: Blog
-    }         
+    },
+    // {
+    //     path: '*',
+    //     name: 'NotFound',
+    //     component: NotFound,
+    //   },   
 ]
 
 const router = createRouter ({
     history: createWebHistory(process.env.BASE_URL),
-    routes
+    routes,
+    scrollBehavior: function(to) {
+      if (to.hash) {
+        return {
+          selector: to.hash,
+        };
+      } else {
+        return { x: 0, y: 0 };
+      }
+    },
 })
 
 export default router

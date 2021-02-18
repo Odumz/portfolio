@@ -64,6 +64,26 @@ a.router-link-exact-active.router-link-active {
     background: #F97C46;
 }
 
+@media screen and (max-width: 720px) {
+    nav ul {
+        width: 250px !important;
+        left: -200px !important;
+    }
+
+    nav ul.active {
+        left: -80px !important;
+    }
+    
+    nav ul li {
+        width: 100% !important;
+        margin-left: 15px !important;        
+    }
+
+    nav ul a {
+        padding-right: 0px;
+    }
+}
+
 @media screen and (max-width: 920px) {
     nav ul {
         position: absolute;
@@ -71,7 +91,7 @@ a.router-link-exact-active.router-link-active {
         flex-direction: column;
         left: -160px;
         transition: 300ms ease all;
-        top: 60px;
+        top: 55px;
         box-shadow: 2px 2px 2px #333;
         z-index: 1;
     }

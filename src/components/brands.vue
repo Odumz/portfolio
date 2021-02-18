@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="tw-flex">
         
     </div>
 </template>
