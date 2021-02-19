@@ -11,7 +11,8 @@
                 @mouseleave="$event.currentTarget.style.color = Background || '#fff'"
                     class="tw-flex tw-flex-row-reverse tw-px-3 tw-py-3 tw-items-center"
                     >
-                    <!-- <p v-if="hover">{{ link.title }}</p> -->
+                    <!-- <p class=" tw-invisible" @mouseenter="$event.currentTarget.style.visibility = 'visible'"
+                    @mouseleave="$event.currentTarget.style.visibility = 'hidden'">{{ link.title }}</p> -->
                 <icons :name=link.icon class=" tw-mr-3" />
                 </router-link>
                 <!-- <hr style="height: 1px; border:none; color:#F97C46; background-color:#F97C46;" /> -->
