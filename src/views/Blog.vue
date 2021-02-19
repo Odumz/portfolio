@@ -5,13 +5,16 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe voluptatem aut doloremque sed nulla ratione, perspiciatis consequuntur et nesciunt itaque corrupti repudiandae, dolores commodi eveniet earum accusamus fugiat magni quasi.</p>
         <gallery :content=content class="tw-flex" />
     </div>
+    <Footer />
 </template>
 
 <script>
+import Footer from '../components/footer.vue'
 import gallery from '../components/Gallery.vue'
 export default {
     components: { 
-        gallery 
+        gallery,
+        Footer 
     },    
   data: () => ({
       content: [
