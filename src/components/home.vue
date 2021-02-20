@@ -1,6 +1,6 @@
 <template>
     <div class="">
-        <div class="tw-p-10 tw-bg-purple-50 tw-mx-auto tw-h-5/6">
+        <div class="tw-p-10 tw-bg-purple-50 tw-text-justify tw-mx-auto tw-h-5/6">
             <!-- <div style="background-image:url(http://www.sonoquilibrium.com/wp-content/uploads/2014/11/3134971.jpg)" class="tw-text-white tw-bg-gray-700 tw-bg-no-repeat tw-bg-center tw-bg-cover" >
                 <div class="tw-absolute tw-w-2/5 tw-inset-0 tw-bg-black tw-opacity-50 tw-h-full tw-flex tw-flex-col">
 
