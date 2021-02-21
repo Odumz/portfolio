@@ -25,7 +25,7 @@
                         <p class="tw-w-3/4 tw-mx-auto tw-text-white tw-text-2xl tw-font-normal tw-pb-5">
                             Freelance Web Developer & Mobile UI/UX Designer
                         </p>
-                        <button type="button">What</button>
+                        <button type="button">Button</button>
                         <Button type="button">My portfolio</Button>
                     </div>
                 </div>
