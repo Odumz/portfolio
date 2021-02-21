@@ -1,6 +1,6 @@
 <template>
-    <div id="app" class="tw-flex tw-flex-row-reverse">
-        <home class="home tw-h-screen tw-w-full tw-mx-auto tw-bg-secondary tw-py-8 tw-pr-20" />
+    <div id="app" class="tw-flex tw-flex-row-reverse tw-bg-secondary">
+        <home class="home tw-h-screen tw-w-full tw-mx-auto tw-py-4 tw-pr-20" />
         <socials id="show" class="tw-w-0.5 tw--mt-24"
         :socials=socials />
         <!-- <socials class="tw-w-0.5 tw--mt-24"

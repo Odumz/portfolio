@@ -1,23 +1,25 @@
 <template>
     <div class="tw-mx-auto tw-p-8 tw-bg-secondary tw-text-primary ">
-        Portfolio
-        <experience />
-        <h1>Latest Works</h1>
+        <port />
+        <h1 class="tw-p-10 tw-text-3xl tw-font-bold">Latest Works</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe voluptatem aut doloremque sed nulla ratione, perspiciatis consequuntur et nesciunt itaque corrupti repudiandae, dolores commodi eveniet earum accusamus fugiat magni quasi.</p>
         <gallery :content=content />
+        <experience />
     </div>
     <Footer />
 </template>
 
 <script>
 import Experience from '../components/experience.vue'
+import port from '../components/portfolio.vue'
 import Footer from '../components/footer.vue'
 import gallery from '../components/Gallery.vue'
 export default {
     components: { 
         gallery,
         Experience,
-        Footer 
+        Footer,
+        port
     },
   data: () => ({
       content: [
