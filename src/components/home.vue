@@ -56,11 +56,15 @@ export default {
     top: 0;
     width: 50%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.75);
 }
 
 .hero-inner-content {
     line-height: 23px;
+}
+
+.hero-inner-content {
+    right: 0;
 }
 
  @media screen and (max-width: 768px) {

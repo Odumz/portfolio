@@ -1,6 +1,6 @@
 <template>
     <div id="socials" class="socials tw-flex tw-flex-col tw-items-center tw-mx-auto tw-text-primary tw-bg-secondary tw-pl-10 tw-pr-10">
-        <ul :style="{background: background || '#2A2F32'}" class="tw-flex tw-flex-col tw-mt-36">
+        <ul :style="{background: background || '#2A2F32'}" class="tw-flex tw-mt-2">
             <li v-for="(link, index) in socials" :key="index"
                 class="tw-list-none tw-px-2 tw-text-sm tw-py-2"
                 >
@@ -19,18 +19,18 @@
                 <!-- <icons :name=link.icon class=" tw-mr-3" /> -->
                 <icons
                     :name=link.icon 
-                    class=" tw-mr-3"/>
+                    class=""/>
                 <p class="tw-text-sm tw-mt-2 tw-bg-gray-600 tw-text-gray-100 tw-px-1 tw-absolute tw-rounded tw-bg-opacity-50 tw-shadow-xl tw-hidden" id="tooltip" role="tooltip">
         
                 </p>
                 </router-link>
                 <!-- <hr style="height: 1px; border:none; color:#F97C46; background-color:#F97C46;" /> -->
             </li>
-            <li class="tw-transform tw-flex tw-flex-col rotate-270 tw-text-sm tw-mt-16 tw-mx-1 tw-my-8">
+            <!-- <li class="tw-transform tw-flex tw-flex-col rotate-270 tw-text-sm tw-mt-16 tw-mx-1 tw-my-8">
                  <hr style="height: 0.7px; border:none; background-color: #F97C46;" />
-            </li>
+            </li> -->
         </ul>
-        <p class="tw-transform tw-flex tw-flex-col rotate-270 tw-mt-10">Check me </p> 
+        <!-- <p class="tw-transform tw-flex tw-flex-col rotate-270 tw-mt-10">Check me </p>  -->
         <!-- <span class="tw-transform tw-flex tw-flex-col rotate-270 tw-text-sm tw-mx-3"><hr style="height: 0.7px; border:none; background-color: #F97C46;" /></span> -->
     </div>
 </template>

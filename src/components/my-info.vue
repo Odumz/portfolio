@@ -1,6 +1,6 @@
 <template>
     <div class="lg:tw-flex md:tw-flex-row tw-w-full tw-flex-col tw-items-center">
-        <div class="md:tw-w-2/5 lg:tw-w-2/5 xs::tw-w-full sm:tw-w-full tw-text-primary py-26 md:tw-text-6xl tw-text-xl tw-flex tw-flex-col tw-items-end tw-pr-12 tw-align-middle">
+        <div class="md:tw-w-2/5 lg:tw-w-2/5 xs::tw-w-full sm:tw-w-full tw-text-primary py-26 md:tw-text-6xl tw-text-xl tw-flex tw-flex-col tw-items-end tw-pr-12">
             <p> About Me </p>
             <hr id="hr" style="height: 3px; width: 100px; border: none; color: #F97C46; background-color: #F97C46;" class="tw-mt-2" />
         </div>
