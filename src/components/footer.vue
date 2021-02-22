@@ -1,12 +1,12 @@
 <template>
-    <div class="tw-text-primary tw-bg-secondary tw-py-4">
-        <p class="tw-text-5xl tw-font-bold tw-my-10">0dumz</p>
-        <p class=""> Do feel free to hit me up anytime if you have an interesting project!</p>
-        <socials class="tw-mt-4"
+    <div class="tw-text-tertiary tw-bg-secondary tw-py-4 md:tw--mt-10 tw--mt-32">
+        <p class="tw-text-5xl tw-font-bold tw-my-10">0dumz.</p>
+        <p class="tw-text-gray-500 tw-px-16"> Do feel free to hit me up anytime you have an interesting project! 😊</p>
+        <socials class="tw-mt-4 tw-pb-12"
         :socials=socials />
     </div>
-    <div class="tw-text-primary tw-bg-secondary tw-py-4 tw-border-primary border-t-1">
-        <p class="tw-py-2"> &copy; Odumz 2021 </p>
+    <div class="line tw-bg-secondary tw-py-4 tw-border-tertiary border-t-1">
+        <p class="tw-py-2 tw-text-gray-500"> &copy; 2021 <span class="tw-text-tertiary"> Odumz </span> </p>
     </div>
 </template>
 
@@ -48,4 +48,10 @@ export default {
     border-top-width: 1px;
 }
 
+.line {
+    border-color: rgba(253, 178, 20, 0.29);
+}
+
+@media screen and (max-width: 768px) {
+}
 </style>

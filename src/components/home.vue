@@ -47,6 +47,7 @@ export default {
     background: url(https://res.cloudinary.com/griffintech/image/upload/v1591145178/Fotostack/IMG-20191210-WA0012_li6qsv.jpg) center right ;
     background-size: cover;
     background-repeat: no-repeat;
+    max-height: 90vh;
 }
 
 .hero-img::before {
@@ -63,11 +64,14 @@ export default {
     line-height: 23px;
 }
 
-.hero-inner-content {
+/* .hero-inner-content {
     right: 0;
-}
+} */
 
  @media screen and (max-width: 768px) {
+     .hero-img {
+            max-height: 75vh !important;
+        }
 
      .hero-img::before {
          width: 100% !important;
@@ -79,6 +83,7 @@ export default {
 
     .hero-inner-content {
         line-height: 3px !important;
+        margin-top: -170px;
     }
 
      .hero-inner-content p {
