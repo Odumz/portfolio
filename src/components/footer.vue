@@ -5,7 +5,7 @@
         <socials class="tw-mt-4 tw-pb-12"
         :socials=socials />
     </div>
-    <div class="line tw-bg-secondary tw-py-4 tw-border-tertiary border-t-1">
+    <div class="line tw-bg-secondary tw-py-4 tw-border-tertiary">
         <p class="tw-py-2 tw-text-gray-500"> &copy; 2021 <span class="tw-text-tertiary"> Odumz </span> </p>
     </div>
 </template>
@@ -44,12 +44,10 @@ export default {
 </script>
 
 <style scoped>
-.border-t-1 {
-    border-top-width: 1px;
-}
 
 .line {
     border-color: rgba(253, 178, 20, 0.29);
+    border-top-width: 1px;
 }
 
 @media screen and (max-width: 768px) {
