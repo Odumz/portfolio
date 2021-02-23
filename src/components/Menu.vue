@@ -1,5 +1,5 @@
 <template>
-    <nav :style="{background: background || '#2A2F32'}" class=" tw-bg-secondary tw-py-3 tw-w-full">
+    <nav :style="{background: background || '#2A2F32'}" class=" tw-bg-secondary tw-bg-gra tw-py-3 tw-w-full">
         <ul :style="{background: background || '#2A2F32'}" ref="nav">
             <figure class="image-logo" @click="toggleNav()">
                 <img :src="imagePath" class="tw-h-10 tw-w-10 tw-mr-12 tw-cursor-pointer"/>
@@ -8,14 +8,14 @@
                 class="tw-list-none tw-px-2 tw-py-2"
                 >
                 <router-link
-                    :style="{color: linkColor || '#fff'}"
+                    :style="{color: linkColor || '#E5E7EB'}"
                     :to="link.path"
                     class="tw-flex tw-flex-row-reverse tw-px-3 tw-py-3 tw-items-center"
                     >
                     {{ link.text }}
                 <icons :name=link.icon class=" tw-mr-3" />
                 </router-link>
-                <!-- <hr style="height: 1px; border:none; color:#F97C46; background-color:#F97C46;" /> -->
+                <!-- <hr style="height: 1px; border:none; color:#FBD214; background-color:#FBD214;" /> -->
             </li>
         </ul>
         <!-- <socials class="tw-flex tw-flex-row" /> -->
@@ -44,7 +44,7 @@ export default {
 <style scoped>
 
 nav ul li a:hover {
-    color: #F97C46 !important;
+    color: #FBD214 !important;
 }
 
 nav ul li a::after {
@@ -55,7 +55,7 @@ nav ul li a::after {
   top: 0 !important;
   left: 0 !important;
   bottom: 0 !important;
-  background: #F97C46 !important;
+  background: #FBD214 !important;
   transition: transform 0.5s ease !important;
   transform: scaleX(0) !important;
   transform-origin: right !important;
@@ -69,7 +69,7 @@ nav ul li a.router-link-exact-active.router-link-active::after {
   top: 0 !important;
   left: 0 !important;
   bottom: 0 !important;
-  background: #F97C46 !important;
+  background: #FBD214 !important;
   transition: transform 0.5s ease !important;
   transform: scaleX(0) !important;
   transform-origin: right !important;
@@ -101,7 +101,7 @@ nav ul figure {
         left: 13px;
     }
 a.router-link-exact-active.router-link-active {
-    color: #F97C46 !important;
+    color: #FBD214 !important;
 }
 
 @media screen and (max-width: 720px) {
@@ -178,7 +178,7 @@ a.router-link-exact-active.router-link-active {
     top: 10% !important;
     left: 0 !important;
     bottom: 0 !important;
-    background: #F97C46 !important;
+    background: #FBD214 !important;
     transition: transform 0.5s ease !important;
     transform: scaleX(0) !important;
     transform-origin: right !important;
@@ -192,7 +192,7 @@ a.router-link-exact-active.router-link-active {
     top: 0 !important;
     left: 0 !important;
     bottom: 0 !important;
-    background: #F97C46 !important;
+    background: #FBD214 !important;
     transition: transform 0.5s ease !important;
     transform: scaleX(0) !important;
     transform-origin: right !important;
