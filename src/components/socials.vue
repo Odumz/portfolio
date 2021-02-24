@@ -7,10 +7,7 @@
                 <a
                     :style="{color: linkColor || '#fff'}"
                     :href="link.path"
-                    id="icon"
                     target="blank"
-                    aria-describedby="tooltip"
-                    :data-tooltip-text="link.title"
                     class="tw-flex tw-flex-row-reverse tw-px-3 tw-py-3 tw-items-center"
                     >
                     <!-- <p class=" tw-invisible" @mouseenter="$event.currentTarget.style.visibility = 'visible'"
@@ -19,9 +16,6 @@
                 <icons
                     :name=link.icon 
                     class=" tw-mr-3"/>
-                <p class="tw-text-sm tw-mt-2 tw-bg-gray-600 tw-text-gray-100 tw-px-1 tw-absolute tw-rounded tw-bg-opacity-50 tw-shadow-xl tw-hidden" id="tooltip" role="tooltip">
-        
-                </p>
                 </a>
                 <!-- <hr style="height: 1px; border:none; color:#FBD214; background-color:#FBD214;" /> -->
             </li>
@@ -47,20 +41,6 @@ export default {
         }
     },
 }
-window.addEventListener('DOMContentLoaded', ()=>{
-    const icon = document.querySelector('#icon');
-    const tooltip = document.querySelector('#tooltip');
-
-    tooltip.innerHTML = icon.dataset.tooltipText
-
-    icon.addEventListener('mouseenter', () => {
-        tooltip.classList.remove('tw-hidden');
-    })
-    
-    icon.addEventListener('mouseleave', () => {
-        tooltip.classList.add('tw-hidden');
-    })
-})
 </script>
 
 <style scoped>

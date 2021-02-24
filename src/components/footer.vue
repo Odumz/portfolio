@@ -18,24 +18,36 @@ export default {
    data: () => ({
         socials: [
             {
-            title: 'Facebook',
             path: 'https://facebook.com',
             icon: 'facebook'
             },
             {
-            title: 'Github',
-            path: 'https://github.com',
-            icon: 'github'
+            path: 'https://nstagram.com',
+            icon: 'instagram'
             },
             {
-            title: 'LinkedIn',
+            path: 'https://twitter.com',
+            icon: 'twitter'
+            },
+            {
             path: 'https://linkedin.com',
             icon: 'linkedin'
             },
             {
-            title: 'Twitter',
-            path: 'https://twitter.com',
-            icon: 'twitter'
+            path: 'https://github.com',
+            icon: 'github'
+            },
+            {
+            path: 'https://stackoverflow.com',
+            icon: 'stackoverflow'
+            },
+            {
+            path: 'https://github.com',
+            icon: 'phone-social'
+            },
+            {
+            path: 'https://github.com',
+            icon: 'mail-social'
             },
         ],
         show: true 

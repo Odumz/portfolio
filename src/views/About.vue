@@ -1,10 +1,10 @@
 <template>
     <div class="tw-flex tw-bg-secondary tw-h-screen tw-mb-16">
-        <myinfo class="info tw-w-full tw-flex md:tw-h-2/5 tw-overflow-y-hidden tw-mx-auto tw-py-4" />
+        <!-- <myinfo class="info tw-w-full tw-flex md:tw-h-2/5 tw-overflow-y-hidden tw-mx-auto tw-py-4" /> -->
         <!-- <profileCard class="info tw-flex tw-my-2 tw-mx-auto tw-py-4 tw-pr-20" /> -->
         <div class="md:tw-h-3/5 tw-overflow-hidden tw-w-full tw-flex tw-mx-auto tw-py-4 tw-pr-0 tw-mt-auto">
             <div class="md:tw-flex tw-w-full tw-items-center">
-                <!-- <skills class="md:tw-w-3/5 tw-w-full tw-mx-auto" :skills=skills /> -->
+                <skills class="md:tw-w-3/5 tw-w-full tw-mx-auto" :skills=skills />
                 <!-- <profile-card class="md:tw-w-2/5 tw-w-full tw-mx-auto tw-pt-4" /> -->
             </div>
         </div>
@@ -14,16 +14,16 @@
 
 <script>
 import Footer from '../components/footer.vue'
-import myinfo from '../components/my-info'
+// import myinfo from '../components/my-info'
 // import ProfileCard from '../components/profileCard'
-// import Skills from '../components/Skills.vue'
+import Skills from '../components/Skills.vue'
 
 export default {
     components: {
-        myinfo,
+        // myinfo,
         Footer,
         // ProfileCard,
-        // Skills
+        Skills
     },
    data: () => ({
         skills: [
