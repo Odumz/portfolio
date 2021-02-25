@@ -1,10 +1,11 @@
 <template>
-<div id="app">
+<div id="app" class="tw-w-screen">
   <Menu
    :nav-links="navLinks"
    :image-path="require('./assets/logo.png')"
+   class="tw-h-full tw-w-1/12 "
    />
-  <router-view />
+  <router-view class="tw-w-11/12" />
 </div>
 </template>
 
@@ -66,19 +67,6 @@ body {
   margin: 0;
 }
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-    font-weight: bold;
-    color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-      color: #42b983;
-    }
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -86,5 +74,6 @@ body {
   text-align: center;
   color: #2c3e50;
   background-color: #2A2F32 !important;
+  overflow: hidden;
 }
 </style>

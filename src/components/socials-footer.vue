@@ -1,6 +1,6 @@
 <template>
     <div id="socials" class="socials tw-flex tw-flex-col tw-items-center tw-mx-auto tw-text-tertiary tw-bg-secondary tw-pl-10 tw-pr-10">
-        <ul :style="{background: background || '#2A2F32'}" class="tw-flex tw-mt-2">
+        <ul :style="{background: background || '#2A2F32'}" class="tw-grid tw-grid-cols-4 tw-mt-2 my-grid">
             <li v-for="(link, index) in socials" :key="index"
                 class="tw-list-none tw-px-2 tw-text-sm tw-py-2"
                 >
@@ -76,6 +76,12 @@ export default {
     }
 
     
+}
+
+@media screen and (min-width: 675px) {
+    .my-grid {
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 850px) {

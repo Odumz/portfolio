@@ -1,5 +1,5 @@
 <template>
-    <div class="tw-mx-auto tw-bg-secondary tw-p-8 tw-text-primary tw-font-light tw-text-xl tw-h-screen">
+    <div class="tw-mx-auto tw-bg-secondary tw-p-8 tw-text-tertiary tw-font-light tw-text-xl tw-h-screen">
         gallery
         <div v-for="(link, index) in content" :key="index"
                 @mouseenter="$event.currentTarget.style.background = hoverBackground || '#eee'"
@@ -7,7 +7,7 @@
                 class="tw-list-none tw-px-2 tw-py-2"
                 >
                 <router-link
-                    :style="{color: linkColor || '#fff'}"
+                    :style="{color: linkColor || '#FBD214'}"
                     :to="link.path"
                     class="tw-flex tw-flex-row-reverse tw-px-3 tw-py-3 tw-items-center"
                     >

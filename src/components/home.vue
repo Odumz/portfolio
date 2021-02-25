@@ -26,9 +26,9 @@
                             Freelance Web Developer & Mobile UI/UX Designer
                         </p>
                         <div class="md:tw-flex md:tw-w-3/5 tw-mx-auto">
-                            <router-link class="md:tw-text-base tw-text-sm tw-animate-bounce tw-w-auto hover:tw-bg-secondary hover:tw-text-tertiary line tw-px-8 md:tw-px-4 md:tw-py-2 tw-py-4 tw-my-4 tw-text-center tw-mx-auto tw-flex tw-justify-center " to="/about-me"> 
+                            <router-link class="md:tw-text-base tw-text-sm tw-animate-bounce tw-w-auto hover:tw-bg-secondary hover:tw-text-tertiary line tw-px-8 md:tw-px-4 md:tw-py-2 tw-py-4 tw-my-4 tw-text-center md:tw-mx-2 tw-mx-auto tw-flex tw-justify-center " to="/about-me"> 
                             About me </router-link>
-                            <router-link class="md:tw-text-base tw-text-sm tw-w-auto hover:tw-bg-secondary tw-bg-tertiary hover:tw-text-tertiary tw-text-secondary line tw-px-8 md:tw-px-4 md:tw-py-2 tw-py-4 tw-my-4 tw-text-center tw-mx-auto tw-flex tw-justify-center " to="/contact-me"> 
+                            <router-link class="md:tw-text-base tw-text-sm tw-w-auto hover:tw-bg-secondary tw-bg-tertiary hover:tw-text-tertiary tw-text-secondary line md:tw-mx-2 tw-px-8 md:tw-px-4 md:tw-py-2 tw-py-4 tw-my-4 tw-text-center tw-mx-auto tw-flex tw-justify-center " to="/contact-me"> 
                             Hire me! 
                                 <span class="tw-flex tw-justify-center tw-items-center tw-h-3 tw-w-3"> &nbsp;
                                 <span class="tw-animate-ping hover:tw-bg-tertiary tw-absolute tw-inline-flex tw-w-9 tw-h-9 tw-rounded-full tw-bg-secondary tw-opacity-75"></span>
