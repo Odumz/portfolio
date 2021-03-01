@@ -25,10 +25,10 @@
                 </li> -->
                 <icons
                     name="arrow-up" 
-                    class="tw-text-sm tw-mt-3 tw-mx-1 tw-text-tertiary"/>
+                    class="tw-text-sm tw-mt-6 tw-mx-1 tw-text-tertiary"/>
             </div>
         </ul>
-        <p class="tw-transform tw-flex tw-flex-col tw-text-tertiary rotate-270 tw-mt-5">Check me </p> 
+        <p class="tw-transform tw-flex tw-flex-col tw-text-tertiary rotate-270 tw-mt-10">Check me </p> 
         <!-- <span class="tw-transform tw-flex tw-flex-col rotate-270 tw-text-sm tw-mx-3"><hr style="height: 0.7px; border:none; background-color: #FBD214;" /></span> -->
     </div>
 </template>
