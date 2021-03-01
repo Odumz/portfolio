@@ -5,10 +5,9 @@
                 class="tw-list-none tw-px-2 tw-text-sm tw-py-2"
                 >
                 <a
-                    :style="{color: linkColor || '#fff'}"
                     :href="link.path"
                     target="blank"
-                    class="tw-flex tw-flex-row-reverse tw-px-3 tw-py-3 tw-items-center"
+                    class="tw-flex tw-text-tertiary tw-flex-row-reverse tw-px-3 tw-py-3 tw-items-center"
                     >
                     <!-- <p class=" tw-invisible" @mouseenter="$event.currentTarget.style.visibility = 'visible'"
                     @mouseleave="$event.currentTarget.style.visibility = 'hidden'">{{ link.title }}</p> -->

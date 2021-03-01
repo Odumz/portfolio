@@ -5,7 +5,6 @@
                 class="tw-list-none tw-px-2 tw-text-sm tw-py-2"
                 >
                 <a
-                    :style="{color: linkColor || '#fff'}"
                     :href="link.path"
                     target="blank"
                     class="tw-flex tw-flex-row-reverse tw-px-3 tw-py-3 tw-items-center"
