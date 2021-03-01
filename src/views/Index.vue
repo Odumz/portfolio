@@ -6,7 +6,7 @@
         <!-- <socials class="tw-w-0.5 tw--mt-24"
         :socials=socials /> -->
     </div>
-    <Footer />
+    <Footer class="tw-mt-auto" />
     
 </template>
 

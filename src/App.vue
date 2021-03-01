@@ -30,26 +30,26 @@ export default {
           path: '/about-me',
           icon: 'about'
         },
-        {
-          text: 'Portfolio',
-          path: '/my-works',
-          icon: 'portfolio'
-        },
-        {
-          text: 'Services',
-          path: '/services-i-offer',
-          icon: 'services'
-        },
-        {
-          text: 'Contact',
-          path: '/contact-me',
-          icon: 'contact'
-        },
-        {
-          text: 'Blog',
-          path: '/my-blogs',
-          icon: 'blog'
-        }
+        // {
+        //   text: 'Portfolio',
+        //   path: '/my-works',
+        //   icon: 'portfolio'
+        // },
+        // {
+        //   text: 'Services',
+        //   path: '/services-i-offer',
+        //   icon: 'services'
+        // },
+        // {
+        //   text: 'Contact',
+        //   path: '/contact-me',
+        //   icon: 'contact'
+        // },
+        // {
+        //   text: 'Blog',
+        //   path: '/my-blogs',
+        //   icon: 'blog'
+        // }
       ]
   }),
 }
