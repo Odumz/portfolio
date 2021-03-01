@@ -25,7 +25,7 @@
 
         <svg v-else-if="name == 'school'" style="width: 30px" xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><title>School</title><path fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M32 192L256 64l224 128-224 128L32 192z'/><path fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M112 240v128l144 80 144-80V240M480 368V192M256 320v128'/></svg>
 
-        <svg v-else-if="name == 'arrow-up'" xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><title>Arrow Up</title><path fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='18' d='M112 244l144-144 84 34256 120v522'/></svg>
+        <svg v-else-if="name == 'arrow-up'" xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><title>Cloud Upload</title><path fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='12' d='M320 255.79l-64-64-64 64M256 500.21V207.79'/></svg>
 
         <svg v-else-if="name == 'location'" style="width: 30px" xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><title>Pin</title><circle cx='256' cy='96' r='64' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32'/><path d='M272 164a9 9 0 00-9-9h-14a9 9 0 00-9 9v293.56a32.09 32.09 0 002.49 12.38l10.07 24a3.92 3.92 0 006.88 0l10.07-24a32.09 32.09 0 002.49-12.38z'/><circle cx='280' cy='72' r='24'/></svg>
 
