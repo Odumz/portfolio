@@ -6,7 +6,7 @@
         <!-- <socials class="tw-w-0.5 tw--mt-24"
         :socials=socials /> -->
     </div>
-    <Footer />
+    <Footer class="tw-mt-auto" />
     
 </template>
 
@@ -24,22 +24,18 @@ export default {
    data: () => ({
         socials: [
             {
-            title: 'Facebook',
-            path: 'https://facebook.com',
-            icon: 'facebook'
-            },
-            {
-            title: 'Github',
-            path: 'https://github.com',
-            icon: 'github'
-            },
-            {
-            title: 'LinkedIn',
             path: 'https://linkedin.com',
             icon: 'linkedin'
             },
             {
-            title: 'Twitter',
+            path: 'https://facebook.com',
+            icon: 'stackoverflow'
+            },
+            {
+            path: 'https://github.com',
+            icon: 'github'
+            },
+            {
             path: 'https://twitter.com',
             icon: 'twitter'
             },

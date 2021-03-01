@@ -1,5 +1,5 @@
 <template>
-    <div class="tw-mx-auto tw-p-8 tw-bg-secondary tw-text-primary ">
+    <div class="tw-mx-auto tw-p-8 tw-bg-secondary tw-text-tertiary ">
         <port />
         <h1 class="tw-p-10 tw-text-3xl tw-font-bold">Latest Works</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe voluptatem aut doloremque sed nulla ratione, perspiciatis consequuntur et nesciunt itaque corrupti repudiandae, dolores commodi eveniet earum accusamus fugiat magni quasi.</p>
