@@ -24,19 +24,19 @@ export default {
    data: () => ({
         socials: [
             {
-            path: 'https://linkedin.com',
+            path: 'https://www.linkedin.com/in/odumz/',
             icon: 'linkedin'
             },
             {
-            path: 'https://facebook.com',
+            path: 'https://stackoverflow.com/users/14846855/0dumz',
             icon: 'stackoverflow'
             },
             {
-            path: 'https://github.com',
+            path: 'https://github.com/Odumz',
             icon: 'github'
             },
             {
-            path: 'https://twitter.com',
+            path: 'https://twitter.com/0dumz',
             icon: 'twitter'
             },
         ],

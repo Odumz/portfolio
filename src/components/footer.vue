@@ -18,35 +18,35 @@ export default {
    data: () => ({
         socials: [
             {
-            path: 'https://facebook.com',
+            path: 'https://web.facebook.com/Bheyordun/',
             icon: 'facebook'
             },
             {
-            path: 'https://nstagram.com',
+            path: 'https://www.instagram.com/0dumz/',
             icon: 'instagram'
             },
             {
-            path: 'https://twitter.com',
+            path: 'https://twitter.com/0dumz',
             icon: 'twitter'
             },
             {
-            path: 'https://linkedin.com',
+            path: 'https://www.linkedin.com/in/odumz/',
             icon: 'linkedin'
             },
             {
-            path: 'https://github.com',
+            path: 'https://github.com/Odumz',
             icon: 'github'
             },
             {
-            path: 'https://stackoverflow.com',
+            path: 'https://stackoverflow.com/users/14846855/0dumz',
             icon: 'stackoverflow'
             },
             {
-            path: 'https://github.com',
+            path: 'tel:9054556936',
             icon: 'phone-social'
             },
             {
-            path: 'https://github.com',
+            path: 'mailto:odumz20@gmail.com',
             icon: 'mail-social'
             },
         ],
