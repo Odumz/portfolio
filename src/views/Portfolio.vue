@@ -4,7 +4,7 @@
         <h1 class="tw-p-10 tw-text-3xl tw-font-bold">Latest Works</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe voluptatem aut doloremque sed nulla ratione, perspiciatis consequuntur et nesciunt itaque corrupti repudiandae, dolores commodi eveniet earum accusamus fugiat magni quasi.</p>
         <!-- <gallery :content=content /> -->
-        <experience />
+        <experience :experience=experience />
     </div>
     <Footer />
 </template>

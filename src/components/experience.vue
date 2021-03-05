@@ -1,5 +1,6 @@
 <template>
     <div class="tw-antialiased tw-text-gray-700">
+        <h1 class="tw-p-10 tw-text-3xl tw-text-tertiary tw-font-bold">My Experiences</h1>
         <div class="tw-relative tw-container tw-mx-auto tw-px-6 tw-flex tw-flex-col tw-space-y-8">
             <div class="tw-absolute tw-w-2 tw-h-full tw-bg-tertiary tw-shadow-md tw-inset-0 tw-left-17 md:tw-mx-auto md:tw-right-0 md:tw-left-0">
 
@@ -16,7 +17,11 @@
                         aria-hidden="true" >
                     </div>
                     <div class="tw-bg-white tw-p-6 tw-rounded-md tw-shadow-md">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis ipsa eius laborum exercitationem, itaque nam obcaecati soluta ex laudantium odit, ullam optio voluptatum molestias! Distinctio debitis aperiam esse ut dolore?
+                        <h1 class="tw-text-2xl tw-font-bold tw-pt-1">Hostville Software Engineer</h1>
+                        <span class="tw-font-bold tw-text-gray-600 tw-text-sm tw-tracking-wide">Jan 2021 |</span><span class="tw-text-gray-500"> Lagos</span>
+                        <p class="tw-pt-2">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis ipsa eius laborum exercitationem, itaque nam obcaecati soluta ex laudantium odit, ullam optio voluptatum molestias! Distinctio debitis aperiam esse ut dolore?
+                        </p>
                     </div>
                 </div>
             </div>
@@ -32,7 +37,11 @@
                         aria-hidden="true" >
                     </div>
                     <div class="tw-bg-white tw-p-6 tw-rounded-md tw-shadow-md">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis ipsa eius laborum exercitationem, itaque nam obcaecati soluta ex laudantium odit, ullam optio voluptatum molestias! Distinctio debitis aperiam esse ut dolore?
+                        <h1 class="tw-text-2xl tw-font-bold tw-pt-1">Hostville Software Engineer</h1>
+                        <span class="tw-font-bold tw-text-gray-600 tw-text-sm tw-tracking-wide">Jan 2021 |</span><span class="tw-text-gray-500"> Lagos</span>
+                        <p class="tw-pt-2">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis ipsa eius laborum exercitationem, itaque nam obcaecati soluta ex laudantium odit, ullam optio voluptatum molestias! Distinctio debitis aperiam esse ut dolore?
+                        </p>
                     </div>
                 </div>
             </div>
@@ -48,7 +57,11 @@
                         aria-hidden="true" >
                     </div>
                     <div class="tw-bg-white tw-p-6 tw-rounded-md tw-shadow-md">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis ipsa eius laborum exercitationem, itaque nam obcaecati soluta ex laudantium odit, ullam optio voluptatum molestias! Distinctio debitis aperiam esse ut dolore?
+                        <h1 class="tw-text-2xl tw-font-bold tw-pt-1">Hostville Software Engineer</h1>
+                        <span class="tw-font-bold tw-text-gray-600 tw-text-sm tw-tracking-wide">Jan 2021 |</span><span class="tw-text-gray-500"> Lagos</span>
+                        <p class="tw-pt-2">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis ipsa eius laborum exercitationem, itaque nam obcaecati soluta ex laudantium odit, ullam optio voluptatum molestias! Distinctio debitis aperiam esse ut dolore?
+                        </p>
                     </div>
                 </div>
             </div>
@@ -64,7 +77,11 @@
                         aria-hidden="true" >
                     </div>
                     <div class="tw-bg-white tw-p-6 tw-rounded-md tw-shadow-md">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis ipsa eius laborum exercitationem, itaque nam obcaecati soluta ex laudantium odit, ullam optio voluptatum molestias! Distinctio debitis aperiam esse ut dolore?
+                        <h1 class="tw-text-2xl tw-font-bold tw-pt-1">Hostville Software Engineer</h1>
+                        <span class="tw-font-bold tw-text-gray-600 tw-text-sm tw-tracking-wide">Jan 2021 |</span><span class="tw-text-gray-500"> Lagos</span>
+                        <p class="tw-pt-2">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis ipsa eius laborum exercitationem, itaque nam obcaecati soluta ex laudantium odit, ullam optio voluptatum molestias! Distinctio debitis aperiam esse ut dolore?
+                        </p>
                     </div>
                 </div>
             </div>
