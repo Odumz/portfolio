@@ -1,5 +1,5 @@
 <template>
-<div id="app" class="tw-w-screen">
+<div id="app" class="tw-w-screen tw-antialiased">
   <Menu
    :nav-links="navLinks"
    :image-path="require('./assets/logo.png')"
@@ -30,11 +30,11 @@ export default {
           path: '/about-me',
           icon: 'about'
         },
-        // {
-        //   text: 'Portfolio',
-        //   path: '/my-works',
-        //   icon: 'portfolio'
-        // },
+        {
+          text: 'Portfolio',
+          path: '/my-works',
+          icon: 'portfolio'
+        },
         // {
         //   text: 'Services',
         //   path: '/services-i-offer',

@@ -25,7 +25,7 @@
                         <p class="tw-w-3/4 tw-mx-auto tw-text-white tw-text-2xl tw-font-normal tw-pb-5">
                             Freelance Web Developer & Mobile UI/UX Designer
                         </p>
-                        <div class="md:tw-flex md:tw-w-3/5 tw-mx-auto">
+                        <div class="lg:tw-flex tw-justify-center md:tw-w-4/5 tw-mx-auto">
                             <router-link class="md:tw-text-base tw-text-sm tw-animate-pulse tw-w-auto hover:tw-bg-secondary hover:tw-text-tertiary line tw-px-8 md:tw-px-4 md:tw-py-2 tw-py-4 tw-my-4 tw-text-center tw-font-bold md:tw-mx-2 tw-mx-auto tw-flex tw-justify-center " to="/about-me"> 
                             About me </router-link>
                             <!-- <router-link class="md:tw-text-base tw-text-sm tw-w-auto hover:tw-bg-secondary tw-font-bold tw-bg-tertiary hover:tw-text-tertiary tw-text-secondary line md:tw-mx-2 tw-px-8 md:tw-px-4 md:tw-py-2 tw-py-4 tw-my-4 tw-text-center tw-mx-auto tw-flex tw-justify-center " to="/contact-me"> 
