@@ -49,6 +49,10 @@ export default {
             path: 'mailto:odumz20@gmail.com',
             icon: 'mail-social'
             },
+            {
+            path: 'https://www.figma.com/@0dumz',
+            icon: 'figma'
+            },
         ],
         show: true 
     })
