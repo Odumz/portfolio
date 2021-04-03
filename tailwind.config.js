@@ -1,7 +1,13 @@
+const { colors } = require('tailwindcss/defaultTheme');
+
 module.exports = {
-  purge: [],
+  purge: [
+    './public/**/*.html',
+    './public/**/*.js',
+    './src/**/*.vue'
+  ],
   prefix: 'tw-',
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     screens: {
       'xs': '480px',
@@ -13,9 +19,11 @@ module.exports = {
     },
     extend: {
       colors: {
+        cyan: colors.cyan,
+        teal: colors.teal,
         primary: '#F97C46',
         secondary: '#2A2F32',
-        tertiary: '#FBD214'
+        tertiary: '#FBD214',
       },
       inset: {
         '17': '68px',
@@ -27,5 +35,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 }

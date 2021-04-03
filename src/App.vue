@@ -5,18 +5,21 @@
    :image-path="require('./assets/logo.png')"
    class="tw-h-full tw-w-1/12 "
    />
+   <!-- <themeswitcher /> -->
   <router-view class="tw-w-11/12" />
 </div>
 </template>
 
 <script>
 import Menu from '@/components/Menu.vue'
+// import themeswitcher from '@/components/themeswitcher.vue'
 
 // import { Inbox, Home, Grid, Computing, AirplayAudio, Person } from 'akar-icons'
 
 export default {
   components: {
-    Menu
+    Menu,
+    // themeswitcher
   },
   data: () => ({
       navLinks: [
@@ -40,11 +43,11 @@ export default {
         //   path: '/services-i-offer',
         //   icon: 'services'
         // },
-        // {
-        //   text: 'Contact',
-        //   path: '/contact-me',
-        //   icon: 'contact'
-        // },
+        {
+          text: 'Contact',
+          path: '/contact-me',
+          icon: 'contact'
+        },
         // {
         //   text: 'Blog',
         //   path: '/my-blogs',
