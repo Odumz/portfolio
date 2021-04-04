@@ -1,7 +1,10 @@
 <template>
+  <div class="tw-bg-secondary">
+
+  </div>
  <h1 class="tw-font-bold tw-text-tertiary tw-text-4xl tw-tracking-wide">Contact Me</h1>
     <!-- <Form /> -->
-    <contact />
+    <contact :contact=contact />
     <Footer />
 </template>
 
@@ -16,6 +19,23 @@ export default {
     contact
   },
     
+   data: () => ({
+        contact: [
+          {
+          info: '+234 905 455 6936',
+          icon: 'phone'
+          },
+          {
+          info: 'odumz20@gmail.com',
+          icon: 'mail'
+          },
+          {
+          info: '5, Ogunyemi str, Famous.',
+          icon: 'location-2'
+          },
+        ],
+        show: true 
+    })    
 }
 </script>
 
