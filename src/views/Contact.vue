@@ -3,8 +3,8 @@
 
   </div>
  <h1 class="tw-font-bold tw-text-tertiary tw-text-4xl tw-tracking-wide">Contact Me</h1>
+    <contact class="tw-min-w-full" :contact=contact />
     <!-- <Form /> -->
-    <contact :contact=contact />
     <Footer />
 </template>
 
