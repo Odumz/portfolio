@@ -1,6 +1,6 @@
 <template>
-    <div class="tw-mx-auto tw-bg-secondary tw-p-8 tw-text-tertiary ">
-        <h1 class="tw-w-full tw-pt-4 tw-text-4xl">My Skills</h1>
+    <div class="tw-w-full tw-bg-secondary tw-p-8 tw-text-tertiary">
+        <h1 class="tw-pt-4 tw-text-4xl tw-font-semibold">My Skills</h1>
         <hr class="line" /><br />
         <hr class="line-2 tw--mt-7 tw-mx-auto tw-mb-6" />
         <div class="tw-px-10">This is a brief on the skills I currently possess</div>
@@ -36,17 +36,17 @@ export default {
     border: none; 
     color:#FBD214; 
     background-color:#FBD214; 
-    width:35%; 
+    width:17%; 
     text-align:center;
-    margin: 8px auto;
+    margin: 11px auto;
 }
 
 .line-2 {
     height: 2px; 
     border: none; 
-    color:#FBD214; 
-    background-color:#FBD214; 
-    width:19%; 
+    color: #FBD214; 
+    background-color: #FBD214; 
+    width: 8%; 
     text-align:center;
 }
 

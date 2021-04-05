@@ -2,3 +2,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .timeline-img {
+        @apply tw-h-24 tw-w-24 tw-object-cover tw-rounded-full tw-shadow-md tw-border-4 xs:tw-absolute tw-border-primary md:tw-mx-auto tw-right-0 tw-left-0;
+    }
+    .timeline-container {
+        @apply tw-relative tw-pt-2 xs:tw-pt-0 xs:tw-pl-28 md:tw-w-1/2 md:tw-ml-auto md:tw-pl-16;
+    }
+    .timeline-container-left {
+        @apply md:tw-ml-0 md:tw-mr-auto md:tw-pl-0 md:tw-pr-16;
+    }
+    .timeline-pointer {
+        @apply tw-h-4 tw-transform tw-rotate-45 tw-absolute tw-inset-0 tw-left-10 xs:tw-top-11 xs:tw-left-26 tw-w-4 tw-bg-primary md:tw-left-14;
+    }
+    .timeline-pointer-left {
+        @apply md:tw-left-auto md:tw-right-14;
+    }
+}

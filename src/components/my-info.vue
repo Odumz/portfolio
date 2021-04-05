@@ -5,7 +5,7 @@
             <hr id="hr" style="height: 3px; width: 100px; border: none; color: #FBD214; background-color: #FBD214;" class="tw-mt-2" />
         </div>
         <div class="md:tw-w-3/5 tw-w-full md:tw-mt-10 tw-mx-auto tw-bg-tertiary md:tw-text-base tw-text-sm tw-p-10 md:tw-px-10 tw-text-justify">
-            I am Odumosu Oluwashina, born and raised in Lagos, Nigeria. I schooled mostly in Engreg International Schools before going to Obafemi Awolowo University where I graduated with a B.Sc. in Computer Engineering. I am mostly adventurous, positive-minded as well as inquisitive and I love to learn especially so I can provide lasting solutions to local/global challenges.
+            I am Odumosu Oluwashina, born and raised in Lagos, Nigeria. I schooled mostly in Engreg International Schools before going to Obafemi Awolowo University where I graduated with a B.Sc. in Computer Engineering. I am mostly adventurous, positive-minded as well as inquisitive and I love to learn especially so I can see things in a wider perspective, thereby providing lasting solutions to local/global challenges.
             <div class="tw-mt-5 md:tw-my-4 md:tw-pb-4 tw-flex">
                 <!-- <Button :buttons = "buttons" /> -->
                 <router-link class="md:tw-text-base tw-text-sm hover:tw-bg-secondary hover:tw-text-tertiary line tw-px-8 md:tw-px-4 md:tw-py-2 tw-py-4 tw-text-center tw-mx-auto tw-flex tw-items-center " to="/my-works"> 

@@ -1,25 +1,25 @@
 <template>
     <div class="tw-mx-auto tw-p-8 tw-bg-secondary tw-text-tertiary ">
-        <port />
+        <!-- <port /> -->
         <h1 class="tw-p-10 tw-text-3xl tw-font-bold">Latest Works</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe voluptatem aut doloremque sed nulla ratione, perspiciatis consequuntur et nesciunt itaque corrupti repudiandae, dolores commodi eveniet earum accusamus fugiat magni quasi.</p>
-        <gallery :content=content />
-        <experience />
+        <!-- <gallery :content=content /> -->
+        <Experience :experience=experience />
     </div>
     <Footer />
 </template>
 
 <script>
 import Experience from '../components/experience.vue'
-import port from '../components/portfolio.vue'
+// import port from '../components/portfolio.vue'
 import Footer from '../components/footer.vue'
-import gallery from '../components/Gallery.vue'
+// import gallery from '../components/Gallery.vue'
 export default {
     components: { 
-        gallery,
+        // gallery,
         Experience,
         Footer,
-        port
+        // port
     },
   data: () => ({
       content: [
@@ -56,27 +56,43 @@ export default {
       ],
       experience: [
         {
-          name: "Enterprise Development Center",
-          time: "05-01-2021 09:10:15",
-          completed: true
+          company: "Enterprise Development Center",
+          start_time: "05-01-2021 09:10:15",
+          working_till_present: true,
+          end_time: "",
+          description: 'This is some lorem ipsum test awesomely short but needs to be long kinda text but I don\'t know why this nepa people will just take light like that. You people are the worst scum ever. Also this is supposed to be something about my experiences while working here.',
+          location: "Lagos"
         },
         {
-          name: "Eko Innovation Center",
-          time: "?",
+          company: "Eko Innovation Center",
+          start_time: "?",working_till_present: false,
+          end_time: "",
+          description: 'This is some lorem ipsum test awesomely short but needs to be long kinda text but I don\'t know why this nepa people will just take light like that. You people are the worst scum ever. Also this is supposed to be something about my experiences while working here.',
+          location: "Lagos"
         },
         {
-          name: "Econnect Center",
-          time: "05-05-2021 09:10:15",
-          completed: true
+          company: "Econnect Center",
+          start_time: "05-05-2021 09:10:15",
+          working_till_present: false,
+          end_time: "",
+          description: 'This is some lorem ipsum test awesomely short but needs to be long kinda text but I don\'t know why this nepa people will just take light like that. You people are the worst scum ever. Also this is supposed to be something about my experiences while working here.',
+          location: "Lagos"
         },
         {
-          name: "Entertainment Factory Center",
-          time: "05-01-2020 09:10:15",
-          completed: true
+          company: "Entertainment Factory Center",
+          start_time: "05-01-2020 09:10:15",
+          working_till_present: true,
+          end_time: "",
+          description: 'This is some lorem ipsum test awesomely short but needs to be long kinda text but I don\'t know why this nepa people will just take light like that. You people are the worst scum ever. Also this is supposed to be something about my experiences while working here.',
+          location: "Lagos"
         },
         {
-          name: "Enterprise Disease Center",
-          time: "?",
+          company: "Enterprise Disease Center",
+          start_time: "?",
+          working_till_present: false,
+          end_time: "",
+          description: 'This is some lorem ipsum test awesomely short but needs to be long kinda text but I don\'t know why this nepa people will just take light like that. You people are the worst scum ever. Also this is supposed to be something about my experiences while working here.',
+          location: "Lagos"
         },
       ]
   }),

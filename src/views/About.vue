@@ -1,10 +1,8 @@
 <template>
-    <div class="md: tw-bg-secondary tw-h-screen tw-mb-16">
-        <myinfo class="info tw-w-full tw-flex md:tw-h-2/5 tw-overflow-y-hidden tw-mx-auto" />
-        <!-- <div class="">
-            <skills class="md:tw-h-screen md:tw-w-2/3 tw-overflow-y-scroll tw-mx-auto" :skills=skills />
-            <profileCard class="info tw-flex md:tw-w-1/3 tw-my-2 tw-mx-auto tw-py-4 tw-pr-20" />
-        </div> -->
+    <div class="tw-bg-secondary tw-h-screen tw-mb-16">
+        <myinfo class="info tw-w-full tw-flex md:tw-h-2/5 tw-overflow-hidden tw-mx-auto" />
+        <skills class="md:tw-h-full md:tw-w-2/3" :skills=skills />
+        <profileCard class="tw-flex tw-my-2 tw-w-1/3 tw-mx-auto tw-py-4 tw-pr-20" />
         <div class="md:tw-h-3/5 tw-overflow-hidden tw-w-full tw-flex tw-mx-auto tw-py-4 tw-pr-0 tw-mt-auto">
             <div class="md:tw-flex tw-w-full tw-items-center">
                 <!-- <profile-card class="md:tw-w-2/5 tw-w-full tw-mx-auto tw-pt-4" /> -->
@@ -17,15 +15,15 @@
 <script>
 import Footer from '../components/footer.vue'
 import myinfo from '../components/my-info'
-// import ProfileCard from '../components/profileCard'
-// import Skills from '../components/Skills.vue'
+import ProfileCard from '../components/profileCard'
+import Skills from '../components/Skills.vue'
 
 export default {
     components: {
         myinfo,
         Footer,
-        // ProfileCard,
-        // Skills
+        ProfileCard,
+        Skills
     },
    data: () => ({
         skills: [
@@ -115,7 +113,7 @@ export default {
             },
             {
             lang: 'Nodejs',
-            percent: 20,
+            percent: 100,
             color: '#fff9fb',
             type: 'framework'
             },
@@ -125,13 +123,10 @@ export default {
 </script>
 
 <style scoped>
-.info {
-    position: absolute;
-}
  @media screen and (max-width: 920px) {
         .info {
             text-align: right;
-            padding-left: 100px !important;
+            padding-left: 10px !important;
         }
  }
 
