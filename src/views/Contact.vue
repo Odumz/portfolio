@@ -2,19 +2,16 @@
   <div class="tw-bg-secondary">
 
   </div>
- <h1 class="tw-font-bold tw-text-tertiary tw-text-4xl tw-tracking-wide">Contact Me</h1>
+ <h1 class="tw-font-bold tw-ml-12 md:tw-ml-0 tw-my-4 tw-text-tertiary tw-text-4xl tw-tracking-wide">Have an interesting idea?</h1>
     <contact class="tw-min-w-full" :contact=contact />
-    <!-- <Form /> -->
     <Footer />
 </template>
 
 <script>
 import Footer from '../components/footer.vue'
-// import Form from '../components/form.vue'
 import contact from '@/components/contact.vue'
 export default {
   components: { 
-    // Form, 
     Footer, 
     contact
   },
