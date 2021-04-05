@@ -1,10 +1,10 @@
 <template>    
     <div>
         <div class="tw-relative">
-            <div class="tw-absolute tw-z-0 ball-top tw-w-40 tw-h-40 tw-bg-primary tw-rounded-full"></div>
+            <div class="tw-absolute tw-z-0 tw-left-40 tw--top-6 ball-top tw-w-40 tw-h-40 tw-bg-primary tw-rounded-full"></div>
         </div>
         <div class="tw-relative">
-            <div class="tw-absolute tw-z-0 ball-bottom tw-w-40 tw-h-40 tw-bg-secondary tw-rounded-full"></div>
+            <div class="tw-absolute tw-z-0 tw--left-20 tw-top-96 ball-bottom tw-w-40 tw-h-40 tw-bg-secondary tw-rounded-full"></div>
         </div>
         <div class="tw-relative tw-z-10 tw-bg-white md:tw-80 tw-rounded-xl tw-shadow-lg tw-p-8">
             <form action="" class="tw-flex tw-flex-col tw-space-y-4" method="post">
