@@ -1,7 +1,7 @@
 <template>    
     <div>
         <div class="tw-relative">
-            <div class="tw-absolute tw-z-0 tw-left-40 tw--top-6 ball-top tw-w-40 tw-h-40 tw-bg-primary tw-rounded-full"></div>
+            <div class="tw-absolute tw-z-0 lg:tw-left-40 lg:tw--top-6 ball-top tw-w-40 tw-h-40 tw-bg-primary tw-rounded-full"></div>
         </div>
         <div class="tw-relative">
             <div class="tw-absolute tw-z-0 tw--left-20 tw-top-96 ball-bottom tw-w-40 tw-h-40 tw-bg-secondary tw-rounded-full"></div>
@@ -48,33 +48,110 @@ export default {
 <style scoped>
 
 @media only screen and (max-width: 376px) {
-    .ball-top{
-        left: 130px;
-        top: 20px;
-    }
+    /* .ball-top{
+        left: 150px;
+        bottom: -120px;
+    } */
 
-    .ball-bottom{
+    /* .ball-bottom{
         left: -80px;
         top: 30px
-    }
+    } */
 }
 
-@media only screen and (max-width: 419px) {
+@media only screen and (max-width: 440px) {
     .ball-top{
-        left: 250px;
-        top: -31px
-    }
-}
-
-@media only screen and (max-width: 490px) {
-    .ball-top{
-        left: 255px;
-        top: -31px
+        left: 175px !important;
+        top: -41px !important;
     }
 
     .ball-bottom {
-        left: -90px;
-        top: 420px;
+        left: -90px !important;
+        top: 400px !important;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .ball-top{
+        left: 275px !important;
+        top: -71px !important;
+    }
+
+    .ball-bottom {
+        left: -70px;
+        top: 378px;
+    }
+}
+
+@media only screen and (max-width: 598px) {
+    .ball-top{
+        left: 335px !important;
+        top: -71px !important;
+    }
+
+    .ball-bottom {
+        left: -70px;
+        top: 378px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .ball-top{
+        left: 355px !important;
+        top: -71px !important;
+    }
+
+    .ball-bottom {
+        left: -70px;
+        top: 378px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .ball-top{
+        left: 455px !important;
+        top: -71px !important;
+    }
+
+    .ball-bottom {
+        left: -70px;
+        top: 378px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .ball-top{
+        left: 455px !important;
+        top: -71px !important;
+    }
+
+    .ball-bottom {
+        left: -70px;
+        top: 378px;
+    }
+}
+/* 
+@media only screen and (max-width: ) {
+    .ball-top{
+        left: 365px !important;
+        top: -71px !important;
+    }
+
+    .ball-bottom {
+        left: -70px;
+        top: 378px;
+    }
+}
+
+@media only screen and (max-width: ) {
+    .ball-top{
+        left: 365px !important;
+        top: -71px !important;
+    }
+
+    .ball-bottom {
+        left: -70px;
+        top: 378px;
+    }
+} */
 </style>

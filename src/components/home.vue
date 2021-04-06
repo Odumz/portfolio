@@ -35,7 +35,7 @@
                                 <span class="tw-relative tw-inline-flex tw-rounded-full tw-h-1 tw-w-1 hover:tw-bg-tertiary tw-bg-secondary"></span>
                                 </span>
                             </router-link> -->
-                            <router-link class="md:tw-text-base tw-text-sm tw-w-auto hover:tw-bg-secondary tw-font-bold tw-bg-tertiary hover:tw-text-tertiary tw-text-secondary line md:tw-mx-2 tw-px-8 md:tw-px-4 md:tw-py-2 tw-py-4 tw-my-4 tw-text-center tw-mx-auto tw-flex tw-justify-center " to="/"> 
+                            <router-link class="md:tw-text-base tw-text-sm tw-w-auto hover:tw-bg-secondary tw-font-bold tw-bg-tertiary hover:tw-text-tertiary tw-text-secondary line md:tw-mx-2 tw-px-8 md:tw-px-4 md:tw-py-2 tw-py-4 tw-my-4 tw-text-center tw-mx-auto tw-flex tw-justify-center " to="/contact-me"> 
                             Hire me! 
                                 <span class="tw-flex tw-justify-center tw-items-center tw-h-3 tw-w-3"> &nbsp;
                                 <span class="tw-animate-ping hover:tw-bg-tertiary tw-absolute tw-inline-flex tw-w-9 tw-h-9 tw-rounded-full tw-bg-secondary tw-opacity-75"></span>
