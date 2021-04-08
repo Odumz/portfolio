@@ -1,19 +1,20 @@
 <template>
-    <div class="tw-mx-auto tw-p-8 tw-bg-secondary tw-text-tertiary ">
+    <div class="tw-mx-auto tw-p-8 tw-bg-secondary tw-text-tertiary tw-ml-10 ">
         <!-- <port /> -->
         <h1 class="tw-p-10 tw-text-3xl tw-font-bold">Latest Works</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe voluptatem aut doloremque sed nulla ratione, perspiciatis consequuntur et nesciunt itaque corrupti repudiandae, dolores commodi eveniet earum accusamus fugiat magni quasi.</p>
         <!-- <gallery :content=content /> -->
+        <resume :resume=resume />
         <Experience :experience=experience />
-        {{ myBiodata.user }} {{ myBiodata.yna.docs[0][0] }}
     </div>
     <Footer />
 </template>
 
 <script>
-import Experience from '../components/experience.vue'
-// import port from '../components/portfolio.vue'
-import Footer from '../components/footer.vue'
+import Experience from '@/components/experience.vue'
+import resume from '@/components/resume.vue'
+// import port from '@/components/portfolio.vue'
+import Footer from '@/components/footer.vue'
 // import gallery from '../components/Gallery.vue'
 import biodata from '../../biodata.json'
 
@@ -24,6 +25,7 @@ export default {
       // gallery,
       Experience,
       Footer,
+      resume,
       // port
   },
   mounted() {
@@ -31,7 +33,7 @@ export default {
     this.getBiodata();
   },
   data: () => ({
-    myBiodata: biodata,
+    resume: biodata,
     content: [
       {
         text: 'Home',
@@ -124,7 +126,7 @@ export default {
       });
       return repository;
     },
-    getBiodata() {
+    getBiodata () {
       console.log(biodata);
     }
   }
