@@ -5,6 +5,7 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe voluptatem aut doloremque sed nulla ratione, perspiciatis consequuntur et nesciunt itaque corrupti repudiandae, dolores commodi eveniet earum accusamus fugiat magni quasi.</p>
         <!-- <gallery :content=content /> -->
         <Experience :experience=experience />
+        {{ myBiodata.user }} {{ myBiodata.yna.docs[0][0] }}
     </div>
     <Footer />
 </template>
@@ -14,6 +15,7 @@ import Experience from '../components/experience.vue'
 // import port from '../components/portfolio.vue'
 import Footer from '../components/footer.vue'
 // import gallery from '../components/Gallery.vue'
+import biodata from '../../biodata.json'
 
 import { Octokit } from "@octokit/core";
 
@@ -26,8 +28,10 @@ export default {
   },
   mounted() {
     this.getRepos();
+    this.getBiodata();
   },
   data: () => ({
+    myBiodata: biodata,
     content: [
       {
         text: 'Home',
@@ -106,18 +110,22 @@ export default {
   methods: {
     async getRepos () {
       // Create a personal access token at https://github.com/settings/tokens/new?scopes=repo
-      const octokit = new Octokit({ auth: `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` });
+      const octokit = new Octokit({ auth: process.env.GITHUB_AUTH });
 
       const repository = await octokit.request("GET /users/{org}/repos", {
         org: "Odumz",
         type: "public",
       }).then((response) => {
+        console.log(response);
         this.repo = response;
       }).catch((error) => {
         let err = error.response.data ? error.response.data.message : "Something happened";
         console.log(err)
       });
       return repository;
+    },
+    getBiodata() {
+      console.log(biodata);
     }
   }
 }
