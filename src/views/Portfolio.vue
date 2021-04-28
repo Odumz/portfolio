@@ -5,13 +5,13 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe voluptatem aut doloremque sed nulla ratione, perspiciatis consequuntur et nesciunt itaque corrupti repudiandae, dolores commodi eveniet earum accusamus fugiat magni quasi.</p>
         <!-- <gallery :content=content /> -->
         <resume :resume=resume />
-        <Experience :experience=experience />
+        <!-- <Experience :experience=experience /> -->
     </div>
     <Footer />
 </template>
 
 <script>
-import Experience from '@/components/experience.vue'
+// import Experience from '@/components/experience.vue'
 import resume from '@/components/resume.vue'
 // import port from '@/components/portfolio.vue'
 import Footer from '@/components/footer.vue'
@@ -23,7 +23,7 @@ import { Octokit } from "@octokit/core";
 export default {
   components: { 
       // gallery,
-      Experience,
+      // Experience,
       Footer,
       resume,
       // port

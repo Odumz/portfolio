@@ -1,9 +1,6 @@
 <template>
-  <div class="tw-bg-secondary">
-
-  </div>
  <h1 class="tw-font-bold tw-ml-12 md:tw-ml-0 tw-my-4 tw-text-tertiary tw-text-4xl tw-tracking-wide">Have an interesting idea?</h1>
-    <contact class="tw-min-w-full" :contact=contact />
+    <contact class="" :contact=contact />
     <Footer />
 </template>
 
