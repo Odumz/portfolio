@@ -58,32 +58,35 @@ export default {
     },
     methods: {
         sendMail() {
-            console.log('Hello')
+            // console.log('Hello')
             this.submit();
         },
         sendEmail() {
-            console.log('Hello5')
+            // console.log('Hello5')
             try {
-                console.log('Hello6')
+                // console.log('Hello6')
                 const templateParams = {
                     from_name: this.data.name,
                     to_name: 'Biodun',
                     email: this.data.email,
                     message: this.data.message
                 }
-                console.log(templateParams)
+                // console.log(templateParams)
                 if (templateParams.from_name === undefined || templateParams.email === undefined || templateParams.message === undefined) {
-                    console.log('Please fill all fields')
+                    // console.log('Please fill all fields')
                     // alert('Please fill all fields')
                     swal.fire('Oops...', 'Looks like you haven\'t filled all fields', 'info');
                 } else { 
                     emailjs.send('service_u8de7e5', 'template_llnx0yt', templateParams, 'user_MT6KU1tpIihHDSbn0oXqO').then((response) => {
-                        console.log('Success', response.status, response.text);
+                        // console.log('Success', response.status, response.text, response);
+                        if (response.status == 200) {
+                            swal.fire('Success', 'Mail has been successfully sent', 'success');    
+                        }
                         // alert(response.text);
-                        swal.fire('Success', 'Mail has been successfully sent', 'success');    
+                        // swal.fire('Success', 'Mail has been successfully sent', 'success');    
                     }, (err) => {
                         swal.fire('Oops...', err, 'error');
-                        console.log('Failed...', err)
+                        // console.log('Failed...', err)
                     });
                     
                     this.data.name = '';
@@ -91,7 +94,7 @@ export default {
                     this.data.message = '';
 
                 }
-                console.log('Hello7')
+                // console.log('Hello7')
             } catch {
                 swal.fire('Oops...', 'we need help Houston', 'error');
                 this.$toasted.show(`Oops, we need help Houston <br/>`, {
@@ -99,28 +102,28 @@ export default {
                     position: 'top-center',
                     duration: 5000,
                 });
-                console.log('here I am')
+                // console.log('here I am')
             }
 
-            console.log('Hello8')
+            // console.log('Hello8')
 
             
 
-            console.log('Hello9')
+            // console.log('Hello9')
         },
         submit() {
-            console.log('Hello10')
+            // console.log('Hello10')
             // this.errorCheck();
-            console.log('Hello11')
+            // console.log('Hello11')
             this.clicked = true;
-            console.log('Hello12')
+            // console.log('Hello12')
             this.button_text = 'Sending...';
-            console.log('Hello13')
+            // console.log('Hello13')
             // const self = this;
-            console.log('Hello14')
+            // console.log('Hello14')
             // this.errors = false;
 
-            console.log('Hello15')
+            // console.log('Hello15')
 
             // if (this.errors) {
             //     console.log('Hello16')
@@ -139,13 +142,13 @@ export default {
             //     self.clicked = false;
             //     }, 3500);
             // } else {
-                console.log('Hello18')
+                // console.log('Hello18')
                 this.sendEmail();
-                console.log('Hello19')
+                // console.log('Hello19')
                 this.clicked = false;
-                console.log('Hello20')
+                // console.log('Hello20')
                 this.button_text = 'Send Message';
-                console.log('hello21')
+                // console.log('hello21')
                 // setTimeout(function() {
                 // self.$toasted
                 //     .success('Account successfully created', {
