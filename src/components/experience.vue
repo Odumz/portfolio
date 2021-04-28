@@ -5,14 +5,15 @@
             <div class="tw-absolute tw-w-2 tw-h-full tw-bg-tertiary tw-shadow-md tw-inset-0 tw-left-17 md:tw-mx-auto md:tw-right-0 md:tw-left-0">
 
             </div>
-            <div v-for="(project, index) in experience" :key="index" class="tw-relative tw-z-10"> 
+            <div v-for="(project, index) in experience" :key="index" class="tw-relative  tw-z-10"> 
                 <img 
                     src="https://images.pexels.com/photos/4327409/pexels-photo-4327409.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=100" 
                     alt="" 
                     class="timeline-img" 
                 />
-                <div class="timeline-container">
+                <div id="timeline_container" class="timeline-container">
                     <div 
+                        id="timeline_pointer"
                         class="timeline-pointer"
                         aria-hidden="true" >
                     </div>
@@ -67,5 +68,6 @@ export default {
 .pl-26 {
     padding-left: 104px !important;
 }
+
 
 </style>

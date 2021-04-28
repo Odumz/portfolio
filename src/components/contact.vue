@@ -1,8 +1,8 @@
 <template>
-    <div class="tw-ml-20 md:tw-ml-28 lg-ml tw-flex tw-w-full tw-min-h-screen tw-justify-center tw-items-center">
-        <div class="tw-mr-24 md:tw-mr-32 lg-mr tw-w-11/12">
-            <div class="tw-flex tw-flex-col md:tw-flex-row md:tw-justify-evenly tw-overflow-hidden  md:tw-space-x-6 tw-space-y-6 md:tw-space-y-0 tw-bg-tertiary tw-w-full tw-max-w-6xl tw-p-8 sm:tw-p-12 tw-rounded-xl tw-shadow-lg tw-text-secondary">
-                <div class="tw-flex md:tw-w-3/5  tw-flex-col tw-space-y-8 tw-justify-between">
+    <div class="md:tw-mb-10 tw-mb-32 tw-ml-20 md:tw-ml-28 lg:tw-ml-0 lg-ml tw-flex xl:tw-items-start xl:tw-pt-14 tw-w-full tw-min-h-full tw-justify-center tw-items-center">
+        <div class="tw-mr-24 md:tw-mr-32 lg:tw-mr-0 lg-mr tw-w-11/12">
+            <div class="tw-flex tw-flex-col md:tw-flex-row md:tw-justify-evenly tw-overflow-hidden  md:tw-space-x-6 tw-space-y-6 md:tw-space-y-0 tw-bg-tertiary tw-w-full tw-max-w-max tw-p-8 sm:tw-p-12 tw-rounded-xl tw-shadow-lg tw-text-secondary">
+                <div class="tw-flex md:tw-w-3/5 lg:tw-w-1/2 tw-flex-col tw-space-y-8 tw-justify-between">
                     <div class="">
                         <h1 class="tw-font-bold tw-text-4xl tw-tracking-wide">Contact Me</h1>
                         <p class="tw-pt-2 md:tw-text-left tw-text-secondary tw-text-sm">
@@ -21,7 +21,7 @@
                         <socials :socials=socials />
                     </div>
                 </div>
-                <contactForm />
+                <contactForm class="" />
             </div>
         </div>
     </div>
@@ -75,13 +75,31 @@ export default {
     }
 }
 
-@media only screen and (min-width: 1271px) {
+@media only screen and (min-width: 1851px) {
     .lg-ml{
-        margin-left: 25px;
+        margin-left: 10px;
     }
 
     .lg-mr{
-        margin-right: 30px;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 1890px) {
+    .lg-ml {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .lg-ml {
+        margin-left: 35px;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .lg-ml {
+        margin-left: 11%;
     }
 }
 </style>
