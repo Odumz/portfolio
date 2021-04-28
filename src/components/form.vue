@@ -44,6 +44,7 @@
 
 <script>
 import emailjs from 'emailjs-com';
+import swal from 'sweetalert2'
 
 export default {
     data() {
@@ -57,24 +58,8 @@ export default {
     },
     methods: {
         sendMail() {
-            this.errorCheck();
             console.log('Hello')
             this.submit();
-        },
-        errorCheck() {
-            console.log('Hello1')
-            this.errors = {};
-            console.log('Hello2')
-            let key = this.key
-            console.log(key)
-            for (let i of key)
-            if(!this.data[key[i]]) {
-                console.log('Hello4')
-                this.errors[key[i]] = true;
-                console.log('There is nothing here', this.errors[key[i]])
-                return;
-            }
-            console.log('Hello20')
         },
         sendEmail() {
             console.log('Hello5')
@@ -89,12 +74,15 @@ export default {
                 console.log(templateParams)
                 if (templateParams.from_name === undefined || templateParams.email === undefined || templateParams.message === undefined) {
                     console.log('Please fill all fields')
-                    alert('Please fill all fields')
+                    // alert('Please fill all fields')
+                    swal.fire('Oops...', 'Looks like you haven\'t filled all fields', 'info');
                 } else { 
                     emailjs.send('service_u8de7e5', 'template_llnx0yt', templateParams, 'user_MT6KU1tpIihHDSbn0oXqO').then((response) => {
                         console.log('Success', response.status, response.text);
-                        alert(response.text);
+                        // alert(response.text);
+                        swal.fire('Success', 'Mail has been successfully sent', 'success');    
                     }, (err) => {
+                        swal.fire('Oops...', err, 'error');
                         console.log('Failed...', err)
                     });
                     
@@ -105,11 +93,12 @@ export default {
                 }
                 console.log('Hello7')
             } catch {
-                // this.$toasted(`Oops, we need help Houston <br/>`, {
-                //     theme: 'bubble',
-                //     position: 'top-center',
-                //     duration: 5000,
-                // });
+                swal.fire('Oops...', 'we need help Houston', 'error');
+                this.$toasted.show(`Oops, we need help Houston <br/>`, {
+                    theme: 'bubble',
+                    position: 'top-center',
+                    duration: 5000,
+                });
                 console.log('here I am')
             }
 
