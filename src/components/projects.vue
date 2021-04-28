@@ -2,14 +2,17 @@
     <div class="tw-p-10">
         <form @submit.prevent="search">
             <div class="tw-flex tw-justify-center tw-m-auto">
-                <input v-model="searchTerm" type="text" placeholder="Search here..." class="tw-rounded-md lg:tw-w-2/12 tw-bg-purple-300 tw-pl-4">
-                <button @click="search" class="tw-bg-yellow-200 tw-p-2 tw-rounded-md tw-ml-4 tw-text-white tw-uppercase">
-                    Search
+                <input v-model="searchTerm" type="text" placeholder="Search here..." class="tw-rounded-md lg:tw-w-4/12 tw-bg-gray-600 tw-pl-4">
+                <button @click="search" class="tw-bg-tertiary hover:tw-bg-gray-800 tw-p-2 tw-rounded-md tw-ml-4 tw-text-secondary hover:tw-text-tertiary tw-uppercase">
+                    
+                    <icons
+                    name="search" 
+                    class=""/>
                 </button>
             </div>
         </form>
         <div class="tw-flex tw-flex-wrap tw-justify-around">
-            <div v-for="img of imgs" :key="img.title"  class="tw-w-64 tw-bg-yellow-200 tw-p-3 tw-rounded-md tw-mt-4">
+            <div v-for="img of imgs" :key="img.title"  class="tw-w-64 tw-bg-tertiary tw-p-3 tw-rounded-md tw-mt-4">
                 <img :src="img.poster" alt="img.title">
                 <h3 class="tw-text-xl tw-font-extrabold">{{ img.title }}</h3>
                 <span>{{ img.date }}</span>
@@ -19,6 +22,8 @@
 </template>
 
 <script>
+import icons from './icons'
+
 const imgTest = 'http://www.sonoquilibrium.com/wp-content/uploads/2014/11/3134971.jpg'
 const popURL = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key='
 const bg = 'https://image.tmdb.org/t/p/w1280/';
@@ -32,6 +37,9 @@ export default {
             imgs: [],
             searchTerm: ''
         }
+    },
+    components: {
+        icons
     },
     mounted() {
         fetch(popURL).then(

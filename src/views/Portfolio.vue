@@ -4,6 +4,7 @@
         <h1 class="tw-p-10 tw-text-3xl tw-font-bold">Latest Works</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe voluptatem aut doloremque sed nulla ratione, perspiciatis consequuntur et nesciunt itaque corrupti repudiandae, dolores commodi eveniet earum accusamus fugiat magni quasi.</p>
         <!-- <gallery :content=content /> -->
+        <project />
         <resume :resume=resume />
         <!-- <Experience :experience=experience /> -->
     </div>
@@ -17,6 +18,7 @@ import resume from '@/components/resume.vue'
 import Footer from '@/components/footer.vue'
 // import gallery from '../components/Gallery.vue'
 import biodata from '../../biodata.json'
+import project from '@/components/projects.vue'
 
 import { Octokit } from "@octokit/core";
 
@@ -24,6 +26,7 @@ export default {
   components: { 
       // gallery,
       // Experience,
+      project,
       Footer,
       resume,
       // port
